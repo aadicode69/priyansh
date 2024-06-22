@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slides">
+            <!-- Slide 1 -->
+            <div class="slide">
+                <div class="item">
+                    <img src="1.jpg" alt="Beauty Combo 1">
+                    <div style="display:flex;">
+                        <p style="margin-left:20px">Beauty Combo<br>Rs. 12000/-</p>
+                        <button onclick="buyNow('Beauty Combos', 6000)" style="margin-left: 50px;margin-bottom:10px">Buy Now</button>
+                    </div>
+                    
+                </div>
+                <div class="item">
+                    <img src="2.jpg" alt="Beauty Combo 2">
+                    <div style="display:flex;">
+                        <p style="margin-left:20px">Beauty Combo<br>Rs. 12000/-</p>
+                        <button onclick="buyNow('Beauty Combos', 6000)" style="margin-left: 50px;margin-bottom:10px">Buy Now</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="3.jpg" alt="Beauty Combo 3">
+                    <div style="display:flex;">
+                        <p style="margin-left:20px">Beauty Combo<br>Rs. 12000/-</p>
+                        <button onclick="buyNow('Beauty Combos', 6000)" style="margin-left: 50px;margin-bottom:10px">Buy Now</button>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="4.jpg" alt="Beauty Combo 4">
+                    <div style="display:flex;">
+                        <p style="margin-left:20px">Beauty Combo<br>Rs. 12000/-</p>
+                        <button onclick="buyNow('Beauty Combos', 6000)" style="margin-left: 50px;margin-bottom:10px">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <!-- Repeat similar structure for each item in the second slide -->
+                <div class="item">
+                    <img src="path/to/image5.png" alt="Beauty Combo 5">
+                    <p>Beauty Combo<br>Rs. 12000/-</p>
+                    <button onclick="buyNow('Beauty Combos', 6000)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <img src="path/to/image6.png" alt="Beauty Combo 6">
+                    <p>Beauty Combos<br>Rs. 6000/-</p>
+                    <button onclick="buyNow('Beauty Combos', 6000)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <img src="path/to/image7.png" alt="Beauty Combo 7">
+                    <p>Beauty Combos<br>Rs. 6000/-</p>
+                    <button onclick="buyNow('Beauty Combos', 6000)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <img src="path/to/image8.png" alt="Beauty Combo 8">
+                    <p>Beauty Combos<br>Rs. 6000/-</p>
+                    <button onclick="buyNow('Beauty Combos', 6000)">Buy Now</button>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <!-- Repeat similar structure for each item in the third slide -->
+                <div class="item">
+                    <img src="path/to/image9.png" alt="Beauty Combo 9">
+                    <p>Beauty Combo<br>Rs. 12000/-</p>
+                    <button onclick="buyNow('Beauty Combos', 6000)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <img src="path/to/image10.png" alt="Beauty Combo 10">
+                    <p>Beauty Combos<br>Rs. 6000/-</p>
+                    <button onclick="buyNow('Beauty Combos', 6000)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <img src="path/to/image11.png" alt="Beauty Combo 11">
+                    <p>Beauty Combos<br>Rs. 6000/-</p>
+                    <button onclick="buyNow('Beauty Combos', 6000)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <img src="path/to/image12.png" alt="Beauty Combo 12">
+                    <p>Beauty Combos<br>Rs. 6000/-</p>
+                    <button onclick="buyNow('Beauty Combos', 6000)">Buy Now</button>
+                </div>
+            </div>
+            <!-- Slide 4 -->
+            <div class="slide">
+                <!-- Repeat similar structure for each item in the fourth slide -->
+                <div class="item">
+                    <img src="path/to/image13.png" alt="Beauty Combo 13">
+                    <p>Beauty Combo<br>Rs. 12000/-</p>
+                    <button onclick="buyNow('Beauty Combos', 6000)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <img src="path/to/image14.png" alt="Beauty Combo 14">
+                    <p>Beauty Combos<br>Rs. 6000/-</p>
+                    <button onclick="buyNow('Beauty Combos', 6000)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <img src="path/to/image15.png" alt="Beauty Combo 15">
+                    <p>Beauty Combos<br>Rs. 6000/-</p>
+                    <button onclick="buyNow('Beauty Combos', 6000)">Buy Now</button>
+                </div>
+                <div class="item">
+                    <img src="path/to/image16.png" alt="Beauty Combo 16">
+                    <p>Beauty Combos<br>Rs. 6000/-</p>
+                    <button onclick="buyNow('Beauty Combos', 6000)">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    <div class="see-all">
+        <button onclick="seeAllProducts()">See All</button>
+    </div>
+
+    </div>
+    <h2 class="try" style="align-items: center;">Refer your Friend</h2>
+    <div class="refer-section">
+        <img src="ref_pic.jpg" class="image1" />
+    </div>
+
+    <div class="contact-section">
+        <h2 class="try">Stay in Touch</h2>
+        <p style="padding-left: 30px;">Get latest beauty products on Email.</p>
+        <div class="contact-form">
+            <input type="email" placeholder="Your Email Address" style="border:solid 2px pink;">
+            <button onclick="subscribe()" style="background-color: pink;">Send</button>
+        </div>
+    </div>
+</body>
+<script>
+    let currentSlideIndex = 0;
+
+    document.querySelector('.next').addEventListener('click', () => {
+        changeSlide(1);
+    });
+
+    document.querySelector('.prev').addEventListener('click', () => {
+        changeSlide(-1);
+    });
+
+    function changeSlide(direction) {
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slide').length;
+        currentSlideIndex = (currentSlideIndex + direction + totalSlides) % totalSlides;
+        updateSlidePosition();
+        updateDots();
+    }
+
+    function currentSlide(index) {
+        currentSlideIndex = index;
+        updateSlidePosition();
+        updateDots();
+    }
+
+    function updateSlidePosition() {
+        const slides = document.querySelector('.slides');
+        const offset = -currentSlideIndex * 100;
+        slides.style.transform = `translateX(${offset}%)`;
+    }
+
+    function updateDots() {
+        const dots = document.querySelectorAll('.dot');
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[currentSlideIndex].classList.add('active');
+    }
+
+    // Initialize
+
+    function buyNow(productName, productPrice) {
+        alert('You have selected ${productName} for Rs. ${productPrice}/-');
+        // Here you can add further functionality to handle the buy now action
+    }
+
+    function seeAllProducts() {
+        alert('Redirecting to all products page...');
+        // Here you can add the functionality to redirect to the products page
+    }
+
+    function subscribe() {
+        var email = document.querySelector('.contact-section input').value;
+        if (email) {
+            alert('Thank you for subscribing with ${email}');
+            // Here you can add functionality to handle the subscription
+        } else {
+            alert('Please enter a valid email address');
+        }
+    }
+
+
+</script>
+
+</html>
